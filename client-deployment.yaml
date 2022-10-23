@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: spring-grpc-client-service
-        image: tonyals/simple-spring-grpc-client-app:0.0.3
+        image: tonyals/simple-spring-grpc-client-app:0.0.9
         ports:
         - containerPort: 8080
