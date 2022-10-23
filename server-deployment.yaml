@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-grpc-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-grpc-server-service
+  template:
+    metadata:
+      labels:
+        app: spring-grpc-server-service
+    spec:
+      containers:
+      - name: spring-grpc-server-service
+        image: tonyals/simple-spring-grpc-server-app:latest
+        ports:
+        - containerPort: 9091
