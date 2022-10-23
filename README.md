@@ -37,3 +37,6 @@ Para buscar um pessoa criada basta adicionar o ID gerado e fazer uma chamada `GE
 
 #### Observação
 A aplicação servidora possui um banco H2 em memória, portanto, consistência de dados salvos não é um foco neste exemplo :).
+
+#### Referências
+[Documentação oficial do Spring gRPC](https://yidongnan.github.io/grpc-spring-boot-starter/en/kubernetes.html)
